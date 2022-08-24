@@ -58,6 +58,17 @@ class Array
 	}
 	return mini;
 	}
+	void reverse()
+	{   int s = 0;
+	    int e =this->n-1;
+
+    while(s<=e) {
+        swap(arr[s], arr[e]);
+        s++;
+        e--;
+    }
+	}
+
 	void sort()
 	{
 		for(int i = 0; i < n-1; i++ ) {
@@ -72,17 +83,7 @@ class Array
         swap(arr[minIndex], arr[i]);
     }
 	}
-	void reverse()
-	{   int s = 0;
-	    int e =this->n-1;
-
-    while(s<=e) {
-        swap(arr[s], arr[e]);
-        s++;
-        e--;
-    }
-	}
-};
+	};
 int main() {
 	int n;
 	cout<<"Enter size of array"<<endl;
